@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
+  <base href="/">
     <title>Ngx Bootstrap</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
+      <!-- css -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+    <link rel="stylesheet" href="ngxCss/styles.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
 
     <!-- 1. Load libraries -->
     <!-- IE required polyfill -->
@@ -15,17 +20,24 @@
     <script src="https://code.angularjs.org/2.0.0-beta.17/angular2-all.umd.dev.js"></script>
 
     <!-- 2. Load our 'modules' -->
+    
     <script src='app/header/header.component.js'></script>
-    <script src='app/sidebar/sidebar.component.js'></script>
     <script src='app/content/content.component.js'></script>
+    <script src='app/sidebar/sidebar.component.js'></script>
+
     <script src='app/app/app.component.js'></script>
+    <script src="app/ngxRouter.js" ></script>
     <script src='app/main.js'></script>
+
+    <!-- -->
 
   </head>
 
   <!-- 3. Display the application -->
   <body>
     <ngx-app>Loading...</ngx-app>
+    <!-- import js third party -- >
+
   </body>
 
 </html>
