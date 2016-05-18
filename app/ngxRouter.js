@@ -14,6 +14,6 @@
             name: 'Collapse',
             component: app.ContentComponent
         }
-    ])
+    ])(app.AppComponent)
   })(window.app || (window.app = {}));
   
