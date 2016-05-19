@@ -1,3 +1,6 @@
+.full-height {
+  height: 100%;
+}
 .ngx-table {
   display: table;
 }
@@ -14,6 +17,19 @@
 .ngx-container .ngx-sidebar-left .header-bar {
   height: 200px;
   background: #ffffff;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+}
+.ngx-container .ngx-sidebar-left .sidebar-content {
+  position: absolute;
+  top: 200px;
+  left: 0px;
+  overflow: auto;
+  height: calc(100% - 200px);
+  width: 100%;
 }
 .ngx-container .ngx-content-wrapper {
   margin-left: 270px;
