@@ -6,7 +6,11 @@
       directives: [
         app.ContentComponent,
         app.HeaderComponent,
-        app.SidebarComponent        
+        app.SidebarComponent,
+        ng.router.ROUTER_DIRECTIVES 
+      ],
+      providers: [
+        ng.router.ROUTER_PROVIDERS,
       ]
     })
     .Class({
