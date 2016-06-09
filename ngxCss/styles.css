@@ -12,11 +12,11 @@
   width: 270px;
   position: fixed;
   height: 100%;
-  background: #eeeeee;
+  background: #518fce;
 }
 .ngx-container .ngx-sidebar-left .header-bar {
   height: 200px;
-  background: #ffffff;
+  background: #518fce;
   width: 100%;
   position: absolute;
   top: 0px;
@@ -31,6 +31,11 @@
   height: calc(100% - 200px);
   width: 100%;
 }
+
+.sidebar-content .list-group-item {
+  background: #518fce;
+}
+
 .ngx-container .ngx-content-wrapper {
   margin-left: 270px;
 }
@@ -38,7 +43,7 @@
   position: fixed;
   min-height: 70px;
   width: 100%;
-  background: #eeeeee;
+  background: #518fce;
   padding-left: 20px;
 }
 .ngx-container .ngx-content-wrapper .ngx-main-content .ngx-header .ngx-table {
@@ -60,3 +65,14 @@
   }
 }
 
+.navbar, .breadcrumb {
+  border-radius: 0px;
+}
+
+.breadcrumb>li+li::before {
+  color: white;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+}
