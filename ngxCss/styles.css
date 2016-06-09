@@ -48,3 +48,15 @@
   padding-top: 70px ;
   padding-left: 20px;
 }
+
+@media screen and (max-width: 554px) {
+  
+  .ngx-sidebar-left {
+    display: none;
+  }
+  
+  .ngx-container .ngx-content-wrapper {
+    margin-left: 0px;
+  }
+}
+
