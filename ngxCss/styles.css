@@ -39,12 +39,10 @@
     box-shadow: 0px 0 2px rgb(255, 255, 255);
     transition: all 0.6s;
 }
-.sidebar-content .list-group-item.active {
-    background: #69dd9a;
+.sidebar-content .list-group-item:hover, .sidebar-content .list-group-item.active {
+    background: #0EAC51;
 }
-.sidebar-content .list-group-item:hover {
-    
-}
+
 .ngx-container .ngx-content-wrapper {
   margin-left: 270px;
 }
