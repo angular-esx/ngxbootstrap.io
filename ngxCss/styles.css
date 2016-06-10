@@ -77,14 +77,21 @@
   border-radius: 0px;
 }
 
+.navbar {
+  background: #2ecc71;
+}
+
+.navbar-fixed-top {
+  left: 270px;
+}
+
 .breadcrumb>li+li::before {
   color: white;
 }
 
-.navbar-light .navbar-nav .nav-link {
+a.nav-link {
   color: white;
-}
-.narbar-top {
-    box-shadow: 5px 0px 5px rgb(129, 206, 160);
-    background: #2ecc71;
+  font-size: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
