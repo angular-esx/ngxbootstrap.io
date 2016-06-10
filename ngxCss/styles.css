@@ -37,7 +37,7 @@
     border: 0px;
     border-radius: 0px;
     padding: .55rem 1.25rem;
-    box-shadow: 0px 0 2px rgb(255, 255, 255);
+    box-shadow: 0px 0 2px #0EAC51;
     transition: all 0.6s;
 }
 .sidebar-content .list-group-item:hover, .sidebar-content .list-group-item.active {
