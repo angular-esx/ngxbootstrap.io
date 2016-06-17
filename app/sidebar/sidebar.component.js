@@ -5,10 +5,10 @@
       templateUrl: 'app/sidebar/sidebar.html',
       directives: [
           app.ContentComponent,
-          ng.router.ROUTER_DIRECTIVES,
+          ng.router_deprecated.ROUTER_DIRECTIVES,
       ],
         providers: [
-            ng.router.ROUTER_PROVIDERS,
+            ng.router_deprecated.ROUTER_PROVIDERS,
         ]
     })
     .Class({
