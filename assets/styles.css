@@ -29,6 +29,7 @@
 
 .sidebar-content a {
   color: white;
+  cursor: pointer;
 }
 
 .sidebar-content .list-group-item:hover, .sidebar-content .list-group-item.active {
