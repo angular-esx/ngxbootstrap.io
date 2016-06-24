@@ -30,17 +30,6 @@
             $('ngx-backdrop').removeClass('active');
           }
         });
-
-        $(window).resize(function () {
-          setPaddingContent();
-        });
-
-        function setPaddingContent() {
-          var navbarHeight = $('.navbar').height();
-          $('.ngx-main-content').css('padding-top', (navbarHeight+30) + 'px');
-        }
-
-        setPaddingContent();
       }
     });
 })(window.app || (window.app = {}));

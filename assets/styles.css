@@ -85,10 +85,15 @@
   float: left;
   margin-top: 5px;
   margin-right: 4px;
+  color: white;
 }
 
 .ngx-main-content {
   padding: 80px 40px 40px;
+}
+
+.ngx-main-content h2 {
+  margin-bottom: 2rem;
 }
 
 .navbar-nav .nav-item {
@@ -101,13 +106,13 @@ h1 {
 }
 
 ngx-backdrop {
+  display: none;
   transition: opacity 450ms;
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
- 
 }
 
 @media screen and (max-width: 767px) {
@@ -117,15 +122,18 @@ ngx-backdrop {
     -moz-transition: width 0.35s ease;
     -o-transition: width 0.35s ease;
     transition: width 0.35s ease;
+    visibility: hidden;
   }
   .ngx-container .ngx-sidebar-left.active {
     width: 270px;
     z-index: 1050;
+    visibility: visible;
   }
   .ngx-container .ngx-content-wrapper {
     margin-left: 0px;
   }
   ngx-backdrop.active {
+    display: block;
     background: #212121;
     opacity: 0.4;
     z-index: 1040;
@@ -151,5 +159,17 @@ ngx-backdrop {
   .ngx-main-content {
     padding-left: 10px;
     padding-right: 10px;
+  }
+  .ngx-main-content h2 {
+    margin-bottom: 1.5rem;
+  }
+  .ngx-logo {
+    max-height: 180px;
+  }
+  .dropdown-menu {
+    min-width: auto;
+  }
+  h1 {
+    padding-left: 0px;
   }
 }
