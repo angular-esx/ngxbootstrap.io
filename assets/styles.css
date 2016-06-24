@@ -74,6 +74,10 @@
   border-radius: 0px;
 }
 
+.breadcrumb a, .breadcrumb>li+li::before {
+  color: gray;
+}
+
 .navbar .nav-link {
   font-size: 1.5rem;
   padding-left: 0.5rem;
