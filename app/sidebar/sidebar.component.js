@@ -6,10 +6,11 @@
       directives: [
           app.AlertContentComponent,
           app.ButtonContentComponent,
-          ng.router_deprecated.ROUTER_DIRECTIVES,
+          ng.router_deprecated.RouterLink
+         /* ng.router_deprecated.ROUTER_DIRECTIVES,*/
       ],
         providers: [
-            ng.router_deprecated.ROUTER_PROVIDERS,
+            /*ng.router_deprecated.ROUTER_PROVIDERS,*/
         ]
     })
     .Class({
