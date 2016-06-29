@@ -1,0 +1,23 @@
+<ol class="breadcrumb">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Components</a></li>
+</ol>
+
+<div class="clearfix"></div>
+
+<ul class="nav nav-pills">
+    <li class="nav-item">
+        <a class="nav-link active" [routerLink]="['ExampleContent']">Example</a>
+        <!--<a class="nav-link active" (click)="goToExample()">Example</a>-->
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" [routerLink]="['ApiContent']">API</a>
+       <!-- <a class="nav-link" (click)="goToApi()">API</a>-->
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Github</a>
+    </li>
+</ul>
+<br><br>
+
+<router-outlet></router-outlet>

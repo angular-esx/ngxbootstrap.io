@@ -4,7 +4,8 @@
       selector: 'ngx-app-sidebar',
       templateUrl: 'app/sidebar/sidebar.html',
       directives: [
-          app.ContentComponent,
+          app.AlertContentComponent,
+          app.ButtonContentComponent,
           ng.router_deprecated.ROUTER_DIRECTIVES,
       ],
         providers: [

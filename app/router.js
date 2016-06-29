@@ -1,44 +1,45 @@
   (function(app) {
       ng.router_deprecated.RouteConfig([
         {
-            path: '/alert',
+            path: '/alert/...',
             name: 'Alert',
-            component: app.ContentComponent
+            component: app.AlertContentComponent,
+            useAsDefault: true
         },
         {
-            path: '/button',
+            path: '/button/...',
             name: 'Buttons',
-            component: app.ContentComponent
+            component: app.ButtonContentComponent
         },
         {
-            path: '/collapse',
+            path: '/collapse/...',
             name: 'Collapse',
-            component: app.ContentComponent
+            component: app.AlertContentComponent
         },
         {
-            path: '/carousel',
+            path: '/carousel/...',
             name: 'Carousel',
-            component: app.ContentComponent
+            component: app.AlertContentComponent
         },
         {
-            path: '/dropdown',
+            path: '/dropdown/...',
             name: 'Dropdown',
-            component: app.ContentComponent
+            component: app.AlertContentComponent
         },
         {
-            path: '/modal',
+            path: '/modal/...',
             name: 'Modal',
-            component: app.ContentComponent
+            component: app.AlertContentComponent
         },
         {
-            path: '/progressbar',
+            path: '/progressbar/...',
             name: 'Progressbar',
-            component: app.ContentComponent
+            component: app.AlertContentComponent
         },
         {
-            path: '/tab',
+            path: '/tab/...',
             name: 'Tab',
-            component: app.ContentComponent
+            component: app.AlertContentComponent
         }
     ])(app.AppComponent)
   })(window.app || (window.app = {}));
