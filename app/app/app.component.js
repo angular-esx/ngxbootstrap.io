@@ -9,7 +9,8 @@
         ng.router_deprecated.ROUTER_DIRECTIVES
       ],
       providers: [
-        ng.router_deprecated.ROUTER_PROVIDERS,
+          app.commonService,
+          ng.router_deprecated.ROUTER_PROVIDERS,
       ]
     })
     .Class({

@@ -11,10 +11,19 @@
       ]
     })
     .Class({
-            constructor: [ng.router_deprecated.Router, function (router) {
+            constructor: [ng.router_deprecated.Router,ng.common.Location, function (router, location) {
                 this.router = router;
-                console.log("Alert Content");
-            }]
+                this.location = location;
+                this.tabActive = "example";
+            }],
+          /*  routerOnActivate : function() {
+                var self = this;
+                console.log(self.location.path());
+            }*/
+            changeTab : function(tab) {
+                var self = this;
+                self.tabActive = tab;
+            }
         });
     ng.router_deprecated.RouteConfig([
         { path: '/', name: 'ExampleContent', component: app.AlertExampleComponent, useAsDefault: true },

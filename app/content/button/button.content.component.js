@@ -13,7 +13,6 @@
     .Class({
             constructor: [ng.router_deprecated.Router, function (router) {
                 this.router = router;
-                console.log("Button Content");
             }]
         });
     ng.router_deprecated.RouteConfig([

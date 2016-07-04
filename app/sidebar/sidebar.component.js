@@ -7,14 +7,20 @@
           app.AlertContentComponent,
           app.ButtonContentComponent,
           ng.router_deprecated.RouterLink
-         /* ng.router_deprecated.ROUTER_DIRECTIVES,*/
       ],
         providers: [
-            /*ng.router_deprecated.ROUTER_PROVIDERS,*/
         ]
     })
     .Class({
-      constructor: function() {}
+      constructor: [app.commonService,function(commonService) {
+          var self = this;
+          self.commonService = commonService;
+      }],
+      changeComponent: function(comp) {
+            var self = this;
+           console.log(comp);
+            self.commonService.currentComponent = comp;
+      }
     });
    
 })(window.app || (window.app = {}));

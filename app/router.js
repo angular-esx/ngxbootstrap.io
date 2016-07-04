@@ -3,8 +3,7 @@
         {
             path: '/alert/...',
             name: 'Alert',
-            component: app.AlertContentComponent,
-            useAsDefault: true
+            component: app.AlertContentComponent
         },
         {
             path: '/button/...',
