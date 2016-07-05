@@ -1,124 +1,30 @@
 <div class="clearfix">
+    
     <h2>Success</h2>
     <div class="alert alert-success" role="alert">
         <strong>Well done!</strong> You successfully read this important alert message.
     </div>
 
-    <ul class="nav nav-tabs" role="tablist">
-        <li class="nav-item">
-            <a class="nav-link active" data-toggle="tab" href="#home" role="tab">HTML</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#profile" role="tab">CSS</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#messages" role="tab">Javascript</a>
-        </li>
-    </ul>
-
-    <!-- Tab panes -->
-    <div class="tab-content">
-        <div class="tab-pane active" id="home" role="tabpanel" style="padding: 15px;">
-            HTML HTML HTML
-        </div>
-        <div class="tab-pane" id="profile" role="tabpanel" style="padding: 15px;">
-            CSS CSS CSS
-        </div>
-        <div class="tab-pane" id="messages" role="tabpanel" style="padding: 15px;">
-            Javascript
-        </div>
-    </div>
-
-    <br><br>
+    <ngx-markdown [html]="alertSuccess.html"></ngx-markdown>
 
     <h2>Info</h2>
     <div class="alert alert-info" role="alert">
         <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
     </div>
-    <ul class="nav nav-tabs" role="tablist">
-        <li class="nav-item">
-            <a class="nav-link active" data-toggle="tab" href="#home" role="tab">HTML</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#profile" role="tab">CSS</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#messages" role="tab">Javascript</a>
-        </li>
-    </ul>
-
-    <!-- Tab panes -->
-    <div class="tab-content">
-        <div class="tab-pane active" id="home" role="tabpanel" style="padding: 15px;">
-            HTML HTML HTML
-        </div>
-        <div class="tab-pane" id="profile" role="tabpanel" style="padding: 15px;">
-            CSS CSS CSS
-        </div>
-        <div class="tab-pane" id="messages" role="tabpanel" style="padding: 15px;">
-            Javascript
-        </div>
-    </div>
-
-    <br><br>
+    
+    <ngx-markdown [html]="alertInfo.html"></ngx-markdown>
 
     <h2>Warning</h2>
     <div class="alert alert-warning" role="alert">
         <strong>Warning!</strong> Better check yourself, you're not looking too good.
     </div>
-    <ul class="nav nav-tabs" role="tablist">
-        <li class="nav-item">
-            <a class="nav-link active" data-toggle="tab" href="#home" role="tab">HTML</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#profile" role="tab">CSS</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#messages" role="tab">Javascript</a>
-        </li>
-    </ul>
 
-    <!-- Tab panes -->
-    <div class="tab-content">
-        <div class="tab-pane active" id="home" role="tabpanel" style="padding: 15px;">
-            HTML HTML HTML
-        </div>
-        <div class="tab-pane" id="profile" role="tabpanel" style="padding: 15px;">
-            CSS CSS CSS
-        </div>
-        <div class="tab-pane" id="messages" role="tabpanel" style="padding: 15px;">
-            Javascript
-        </div>
-    </div>
-
-    <br><br>
+    <ngx-markdown [html]="alertWarning.html"></ngx-markdown>
 
     <h2>Danger</h2>
     <div class="alert alert-danger" role="alert">
         <strong>Oh snap!</strong> Change a few things up and try submitting again.
     </div>
-    <ul class="nav nav-tabs" role="tablist">
-        <li class="nav-item">
-            <a class="nav-link active" data-toggle="tab" href="#home" role="tab">HTML</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#profile" role="tab">CSS</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#messages" role="tab">Javascript</a>
-        </li>
-    </ul>
 
-    <!-- Tab panes -->
-    <div class="tab-content">
-        <div class="tab-pane active" id="home" role="tabpanel" style="padding: 15px;">
-            HTML HTML HTML
-        </div>
-        <div class="tab-pane" id="profile" role="tabpanel" style="padding: 15px;">
-            CSS CSS CSS
-        </div>
-        <div class="tab-pane" id="messages" role="tabpanel" style="padding: 15px;">
-            Javascript
-        </div>
-    </div>
+    <ngx-markdown [html]="alertDanger.html"></ngx-markdown>
 </div>

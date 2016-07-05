@@ -1,0 +1,24 @@
+<ul class="nav nav-tabs" role="tablist">
+  <li *ngIf="html" class="nav-item">
+    <a class="nav-link active" data-toggle="tab" href="#html" role="tab">HTML</a>
+  </li>
+  <li *ngIf="css" class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#css" role="tab">CSS</a>
+  </li>
+  <li *ngIf="js" class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#js" role="tab">Javascript</a>
+  </li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+  <div *ngIf="html" class="tab-pane active" id="html" role="tabpanel">
+      <pre class="prettyprint linenums language-html">{{html}}</pre>
+  </div>
+  <div *ngIf="css" class="tab-pane" id="css" role="tabpanel">
+      <pre class="prettyprint linenums language-html">{{css}}</pre>
+  </div>
+  <div *ngIf="js" class="tab-pane" id="js" role="tabpanel">
+      <pre class="prettyprint linenums language-js">{{js}}</pre>
+  </div>
+</div>
