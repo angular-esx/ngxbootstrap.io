@@ -108,6 +108,8 @@
 
 h1 {
   padding-left: 20px;
+  font-size: 2rem;
+  line-height: 1.5;
 }
 
 ngx-backdrop {
@@ -118,6 +120,10 @@ ngx-backdrop {
   bottom: 0;
   left: 0;
   right: 0;
+}
+
+.fa {
+  font-size: 1.5rem;
 }
 
 @media screen and (max-width: 767px) {
