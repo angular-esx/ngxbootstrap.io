@@ -1,13 +1,8 @@
-(function (app) {
-    app.GettingStartedComponent =
-        ng.core.Component({
-            templateUrl: 'app/getting-started/getting-started.html',
-            providers: [
+var GettingStartedComponent = ng.core.Component({
+  selector: 'getting-started',
+  template: require('./getting-started.html'),
+}).Class({
+  constructor: function () { }
+});
 
-            ]
-        })
-            .Class({
-                constructor: function () { }
-            });
-
-})(window.app || (window.app = {}));
+module.exports = GettingStartedComponent;

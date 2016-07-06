@@ -1,18 +1,19 @@
-(function (app) {
-  app.AppComponent =
-    ng.core.Component({
-      selector: 'ngx-app',
-      templateUrl: 'app/app/app.html',
-      directives: [
-        app.HeaderComponent,
-        app.SidebarComponent,
-        ng.router_deprecated.ROUTER_DIRECTIVES
-      ],
-      providers: [
-          app.commonService,
-          ng.router_deprecated.ROUTER_PROVIDERS,
-      ]
-    })
+var SidebarComponent = require('./../sidebar/sidebar.component.js');
+
+var AppComponent =
+  ng.core.Component({
+    selector: 'ngx-app',
+    template: require('./app.html'),
+    directives: [
+      app.HeaderComponent,
+      SidebarComponent,
+      ng.router_deprecated.ROUTER_DIRECTIVES
+    ],
+    providers: [
+      app.commonService,
+      ng.router_deprecated.ROUTER_PROVIDERS,
+    ]
+  })
     .Class({
       constructor: function () {
 
@@ -33,4 +34,4 @@
       }
     });
 
-})(window.app || (window.app = {}));
+module.exports = AppComponent;

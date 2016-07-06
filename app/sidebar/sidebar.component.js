@@ -1,26 +1,23 @@
-(function(app) {
-  app.SidebarComponent =
-    ng.core.Component({
-      selector: 'ngx-app-sidebar',
-      templateUrl: 'app/sidebar/sidebar.html',
-      directives: [
-          app.AlertContentComponent,
-          app.ButtonContentComponent,
-          ng.router_deprecated.RouterLink
-      ],
-        providers: [
-        ]
-    })
+var SidebarComponent =
+  ng.core.Component({
+    selector: 'ngx-app-sidebar',
+    template: require('./sidebar.html'),
+    directives: [
+      app.AlertContentComponent,
+      app.ButtonContentComponent,
+      ng.router_deprecated.RouterLink
+    ]
+  })
     .Class({
-      constructor: [app.commonService,function(commonService) {
-          var self = this;
-          self.commonService = commonService;
+      constructor: [app.commonService, function (commonService) {
+        var self = this;
+        self.commonService = commonService;
       }],
-      changeComponent: function(comp) {
-            var self = this;
-           console.log(comp);
-            self.commonService.currentComponent = comp;
+      changeComponent: function (comp) {
+        var self = this;
+        console.log(comp);
+        self.commonService.currentComponent = comp;
       }
     });
-   
-})(window.app || (window.app = {}));
+
+module.exports = SidebarComponent;
