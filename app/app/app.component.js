@@ -14,8 +14,23 @@
       ]
     })
     .Class({
-      constructor: function () {
-
+      constructor: [ng.common.Location,app.commonService, function (location, commonService) {
+        this.location = location;
+        this.commonService = commonService;
+      }],
+      ngOnInit : function() {
+        var self = this;
+        var curPath= self.location.path();
+        console.log(curPath);
+        var array = curPath.split("/");
+        console.log(array);
+        if(array.length > 1) {
+          this.commonService.currentComponent = array[1];
+        }else {
+          this.commonService.currentComponent = "gettingStart";
+        }
+        
+        
       },
       ngAfterViewInit: function () {
         $('#toggle-side-bar').click(function () {
