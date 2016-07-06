@@ -22,9 +22,9 @@ var AppComponent =
       ngOnInit : function() {
         var self = this;
         var curPath= self.location.path();
-        console.log(curPath);
+        // console.log(curPath);
         var array = curPath.split("/");
-        console.log(array);
+        // console.log(array);
         if(array.length > 1) {
           this.commonService.currentComponent = array[1];
         }else {

@@ -15,7 +15,7 @@ var SidebarComponent =
       }],
       changeComponent: function (comp) {
         var self = this;
-        console.log(comp);
+        // console.log(comp);
         self.commonService.currentComponent = comp;
       }
     });
