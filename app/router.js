@@ -1,7 +1,7 @@
   (function(app) {
       ng.router_deprecated.RouteConfig([
         {
-            path: '/alert/...',
+            path: '/components/alert/...',
             name: 'Alert',
             component: app.AlertContentComponent
         },
