@@ -1,37 +1,39 @@
-var SidebarComponent = require('./../sidebar/sidebar.component.js');
+var SidebarComponent = require('app/sidebar/sidebar.component.js');
+var HeaderComponent = require('app/header/header.component.js');
+var commonService = require('./app.service.js');
 
 var AppComponent =
   ng.core.Component({
     selector: 'ngx-app',
     template: require('./app.html'),
     directives: [
-      app.HeaderComponent,
+      HeaderComponent,
       SidebarComponent,
       ng.router_deprecated.ROUTER_DIRECTIVES
     ],
     providers: [
-      app.commonService,
+      commonService,
       ng.router_deprecated.ROUTER_PROVIDERS,
     ]
   })
     .Class({
-      constructor: [ng.common.Location,app.commonService, function (location, commonService) {
+      constructor: [ng.common.Location, commonService, function (location, commonService) {
         this.location = location;
         this.commonService = commonService;
       }],
-      ngOnInit : function() {
+      ngOnInit: function () {
         var self = this;
-        var curPath= self.location.path();
+        var curPath = self.location.path();
         // console.log(curPath);
         var array = curPath.split("/");
         // console.log(array);
-        if(array.length > 1) {
+        if (array.length > 1) {
           this.commonService.currentComponent = array[1];
-        }else {
+        } else {
           this.commonService.currentComponent = "gettingStart";
         }
-        
-        
+
+
       },
       ngAfterViewInit: function () {
         $('#toggle-side-bar').click(function () {

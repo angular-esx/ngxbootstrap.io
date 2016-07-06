@@ -1,3 +1,5 @@
+var commonService = require('app/app/app.service.js');
+
 var SidebarComponent =
   ng.core.Component({
     selector: 'ngx-app-sidebar',
@@ -9,7 +11,7 @@ var SidebarComponent =
     ]
   })
     .Class({
-      constructor: [app.commonService, function (commonService) {
+      constructor: [commonService, function (commonService) {
         var self = this;
         self.commonService = commonService;
       }],
