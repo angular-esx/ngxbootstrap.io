@@ -1,11 +1,12 @@
 var commonService = require('app/app/app.service.js');
+var AlertContentComponent = require('app/content/alert/alert.content.component.js');
 
 var SidebarComponent =
   ng.core.Component({
     selector: 'ngx-app-sidebar',
     template: require('./sidebar.html'),
     directives: [
-      app.AlertContentComponent,
+      AlertContentComponent,
       app.ButtonContentComponent,
       ng.router_deprecated.RouterLink
     ]

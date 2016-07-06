@@ -1,5 +1,6 @@
 var AppComponent = require('./app/app.component.js');
 var GettingStartedComponent = require('./getting-started/getting-started.component.js');
+var AlertContentComponent = require('app/content/alert/alert.content.component.js');
 
 ng.router_deprecated.RouteConfig([
   {
@@ -10,7 +11,7 @@ ng.router_deprecated.RouteConfig([
   {
     path: '/alert/...',
     name: 'Alert',
-    component: app.AlertContentComponent
+    component: AlertContentComponent
   },
   {
     path: '/button/...',
@@ -20,31 +21,31 @@ ng.router_deprecated.RouteConfig([
   {
     path: '/collapse/...',
     name: 'Collapse',
-    component: app.AlertContentComponent
+    component: AlertContentComponent
   },
   {
     path: '/carousel/...',
     name: 'Carousel',
-    component: app.AlertContentComponent
+    component: AlertContentComponent
   },
   {
     path: '/dropdown/...',
     name: 'Dropdown',
-    component: app.AlertContentComponent
+    component: AlertContentComponent
   },
   {
     path: '/modal/...',
     name: 'Modal',
-    component: app.AlertContentComponent
+    component: AlertContentComponent
   },
   {
     path: '/progressbar/...',
     name: 'Progressbar',
-    component: app.AlertContentComponent
+    component: AlertContentComponent
   },
   {
     path: '/tab/...',
     name: 'Tab',
-    component: app.AlertContentComponent
+    component: AlertContentComponent
   }
 ])(AppComponent)

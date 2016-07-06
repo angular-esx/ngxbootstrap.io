@@ -11,8 +11,8 @@ module.exports = {
     loaders: [
       { test: /\.css$/, loader: "css-loader" },
       { test: /\.jpg$/, loader: "file-loader" },
-      { test: /\.svg$/, loader: "svg-url-loader" },
-      { test: /\.html$/, loader: 'html-loader?caseSensitive=true' }
+      { test: /\.svg$/, loader: "svg-url-loader?noquotes" },
+      { test: /\.html$/, loader: 'html-loader?caseSensitive=true&removeAttributeQuotes=false' }
     ]
   },
   plugins: [

@@ -3,8 +3,8 @@ var commonService = require('app/app/app.service.js');
 var HeaderComponent =
   ng.core.Component({
     selector: 'ngx-app-header',
-    styleUrls: ['app/header/header.css'],
-    templateUrl: 'app/header/header.html',
+    style: [require('./header.css')],
+    template: require('./header.html'),
     providers: [
     ]
   })

@@ -1,7 +1,6 @@
-(function (app) {
-  app.AlertContentComponent =
+var AlertContentComponent =
     ng.core.Component({
-      templateUrl: 'app/content/alert/alert.content.html',
+      template: require('./alert.content.html'),
       directives: [
         ng.router_deprecated.RouterOutlet,
         ng.router_deprecated.RouterLink
@@ -28,5 +27,6 @@
   ng.router_deprecated.RouteConfig([
     { path: '/', name: 'ExampleContent', component: app.AlertExampleComponent, useAsDefault: true },
     { path: '/api', name: 'ApiContent', component: app.AlertApiComponent }
-  ])(app.AlertContentComponent)
-})(window.app || (window.app = {}));
+  ])(AlertContentComponent)
+
+module.exports = AlertContentComponent;
