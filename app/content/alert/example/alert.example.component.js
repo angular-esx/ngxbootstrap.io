@@ -1,8 +1,10 @@
+var MarkdownComponent = require('app/markdown/markdown.component.js');
+
 var AlertExampleComponent = ng.core.Component({
     selector: 'ngx-alert-example',
     template: require('./alert.example.component.html'),
     directives: [
-      app.MarkdownComponent
+      MarkdownComponent
     ]
   })
     .Class({
