@@ -1,6 +1,7 @@
 var AppComponent = require('./app/app.component.js');
 var GettingStartedComponent = require('./getting-started/getting-started.component.js');
 var AlertContentComponent = require('app/content/alert/alert.content.component.js');
+var ButtonContentComponent = require('app/content/button/button.content.component.js');
 
 ng.router_deprecated.RouteConfig([
   {
@@ -16,7 +17,7 @@ ng.router_deprecated.RouteConfig([
   {
     path: '/button/...',
     name: 'Buttons',
-    component: app.ButtonContentComponent
+    component: ButtonContentComponent
   },
   {
     path: '/collapse/...',

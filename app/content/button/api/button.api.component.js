@@ -1,13 +1,9 @@
-(function(app) {
-    app.ButtonApiComponent =
-        ng.core.Component({
-            templateUrl: 'app/content/button/api/button.api.component.html',
-            providers: [
+var ButtonApiComponent =
+    ng.core.Component({
+        template: require('./button.api.component.html')
+    })
+        .Class({
+            constructor: function () { }
+        });
 
-            ]
-        })
-            .Class({
-                constructor: function() {}
-            });
-
-})(window.app || (window.app = {}));
+module.exports = ButtonApiComponent;
