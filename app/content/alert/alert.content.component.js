@@ -1,3 +1,6 @@
+var AlertApiComponent = require('./api/alert.api.component.js');
+var AlertExampleComponent = require('./example/alert.example.component.js');
+
 var AlertContentComponent =
     ng.core.Component({
       template: require('./alert.content.html'),
@@ -25,8 +28,8 @@ var AlertContentComponent =
         }
       });
   ng.router_deprecated.RouteConfig([
-    { path: '/', name: 'ExampleContent', component: app.AlertExampleComponent, useAsDefault: true },
-    { path: '/api', name: 'ApiContent', component: app.AlertApiComponent }
+    { path: '/', name: 'ExampleContent', component: AlertExampleComponent, useAsDefault: true },
+    { path: '/api', name: 'ApiContent', component: AlertApiComponent }
   ])(AlertContentComponent)
 
 module.exports = AlertContentComponent;

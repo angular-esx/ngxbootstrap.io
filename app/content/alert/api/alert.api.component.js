@@ -1,13 +1,9 @@
-(function(app) {
-    app.AlertApiComponent =
-        ng.core.Component({
-            templateUrl: 'app/content/alert/api/alert.api.component.html',
-            providers: [
+var AlertApiComponent =
+    ng.core.Component({
+        template: require('./alert.api.component.html')
+    })
+        .Class({
+            constructor: function () { }
+        });
 
-            ]
-        })
-            .Class({
-                constructor: function() {}
-            });
-
-})(window.app || (window.app = {}));
+module.exports = AlertApiComponent;
