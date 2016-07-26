@@ -1,0 +1,104 @@
+html {
+    height: 100%;
+    min-height: 100%;
+}
+body {
+  min-height: 100%;
+}
+body:after {
+    content: "";
+    display: block;
+    position: fixed;
+    top: -46px;
+    bottom: -46px;
+    left: 0;
+    width: 100%;
+    background-image: url("../img/landing-bg3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    z-index: -1;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.ngxld-top-nav {
+  height: 45px;
+  background: #2ecc71;
+  line-height: 45px;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  position: fixed;
+}
+#ngxld-intro {
+    position: relative;
+    min-height: 100vh;
+    margin: 0 auto;   
+    text-align: center;
+    color: #fff;
+    top: 46px;
+}
+.ngxld-intro-title {
+  padding: 30px;
+  margin-bottom: 30px;
+}
+.ngxld-intro-getstart button {
+    padding: 15px 25px;
+    background: #2ecc71;
+    font-size: 1.2em;
+    opacity: 0.8;
+}
+.ngxld-intro-getstart button:hover {
+  opacity: 1;
+  color: inherit;
+}
+.ngxld-intro-content .col-left a, .ngxld-intro-content .col-right a{
+    display: inline-block;
+    overflow: auto;
+    padding: 15px;
+    transition: all 200ms ease-in-out;
+    max-width: 300px;
+    color: #fff;
+    opacity: 0.75;
+}
+.ngxld-intro-content {
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.ngxld-intro-content .col-left a:hover, .ngxld-intro-content .col-right a:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    opacity: 1;
+}
+#ngxld-features {
+  background: rgba(255, 255, 255, 0.7);
+}
+#ngxld-features .container{
+  clear: both;
+  padding: 40px 0px;
+}
+#ngxld-features .feature-pod{
+    padding: 20px 15px;
+    background: rgba(255, 255, 255, 0.95);
+    margin: 15px 0px;
+}
+.ngxld-features-content {
+  
+}
+.ngxld-features-title {
+    padding: 60px 0;
+    background: rgba(46, 204, 113, 0.18);
+    text-align: center;
+}
+#ngxld-footer {
+  min-height: 65px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #e0e0e0;
+    font-size: 1.1em;
+}
+}
