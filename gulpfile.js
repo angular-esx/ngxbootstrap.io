@@ -1,4 +1,4 @@
-ng// Assigning modules to local variables
+// Assigning modules to local variables
 var gulp = require('gulp');
 var less = require('gulp-less');
 var browserSync = require('browser-sync').create();
