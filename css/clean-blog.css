@@ -7,6 +7,7 @@ body {
   font-family: 'Lora', 'Times New Roman', serif;
   font-size: 20px;
   color: #333333;
+  background: #E5E5E5;
 }
 p {
   line-height: 1.5;
@@ -215,6 +216,11 @@ hr.small {
     font-size: 30px;
   }
 }
+.post-preview {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+}
 .post-preview > a {
   color: #333333;
 }
@@ -225,7 +231,7 @@ hr.small {
 }
 .post-preview > a > .post-title {
   font-size: 30px;
-  margin-top: 30px;
+  margin-top: 0px;
   margin-bottom: 10px;
 }
 .post-preview > .post-subtitle {
