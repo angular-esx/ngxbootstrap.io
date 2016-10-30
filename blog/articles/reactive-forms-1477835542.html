@@ -1,0 +1,310 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="description" content="This is a blog of AngularESx team"><meta name="viewport" content="width=device-width,initial-scale=1"><base href="/"><title>AngularESx Blog</title><link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css"><link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css"><link href="blog/css/highlight.css" rel="stylesheet" type="text/css"><link rel="stylesheet" href="blog/css/xblog.css"><style>.xblog-article[_nghost-7d0d-3]    >.xblog-article-content-section{margin:5rem 0}.xblog-article[_nghost-7d0d-3]    >.xblog-article-content-section p{margin:0}.xblog-article[_nghost-7d0d-3]    >.xblog-article-content-section .section-heading{margin:1rem 0}.xblog-article[_nghost-7d0d-3]    >.xblog-article-content-section .section-subheading{margin:1rem 0;color:#818b92}.xblog-article[_nghost-7d0d-3]    >.xblog-article-content-section .section-subject{margin:1rem 0;color:#818b92;text-decoration:underline}.xblog-article[_nghost-7d0d-3]    >.xblog-article-content-section .screen-capture{text-align:center;overflow-x:auto}.xblog-article[_nghost-7d0d-3] > .xblog-article-related-posts-section-title[_ngcontent-7d0d-3]{text-align:center}.xblog-article[_nghost-7d0d-3] > .xblog-article-related-posts-section[_ngcontent-7d0d-3]{margin:3rem 0}</style><style>.ngx-navbar[_nghost-7d0d-5]{display:flex;position:relative;padding:0.5rem 1rem}.ngx-navbar.ngx-navbar-position-top[_nghost-7d0d-5]{position:fixed;right:0;left:0;z-index:500;top:0}.ngx-navbar[_nghost-7d0d-5]    >.ngx-navbar-brand{padding:0.25rem 0 0.25rem 0;margin:0 0 0 1rem;font-size:1.25rem;text-decoration:none}.ngx-navbar.ngx-navbar-color-success[_nghost-7d0d-5]{background-color:#5cb75c}.ngx-navbar.ngx-navbar-color-success[_nghost-7d0d-5]    >.ngx-navbar-brand{cursor:pointer}.ngx-navbar.ngx-navbar-color-success[_nghost-7d0d-5]    >.ngx-navbar-brand, .ngx-navbar.ngx-navbar-color-success[_nghost-7d0d-5]    >.ngx-navbar-brand:focus, .ngx-navbar.ngx-navbar-color-success[_nghost-7d0d-5]    >.ngx-navbar-brand:hover{color:#fff}</style><style>.xblog-header[_nghost-7d0d-6]{display:block;color:#f5f5f5}.xblog-header[_nghost-7d0d-6]    >.ngx-jumbotron{display:flex;flex-flow:column nowrap;justify-content:center;background-size:cover;background-attachment:scroll;background-repeat:no-repeat;background-position:center center;min-height:50vh}.xblog-header[_nghost-7d0d-6]    >.ngx-jumbotron>.ngx-grid{width:100%}.xblog-header[_nghost-7d0d-6]    >.ngx-jumbotron>.ngx-grid h1[xblog-title]{text-align:center;font-size:4rem}.xblog-header[_nghost-7d0d-6]    >.ngx-jumbotron>.ngx-grid hr[xblog-divider]{width:270px;margin:20px auto;border-width:4px;border-top-color:#f5f5f5 !important}.xblog-header[_nghost-7d0d-6]    >.ngx-jumbotron>.ngx-grid xblog-subtitle{display:block;text-align:center;font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;font-size:1.25rem;margin:0.5rem 0 0}</style><style>.ngx-jumbotron[_nghost-7d0d-7]{display:block;padding:2rem 1rem 2rem 1rem;margin:0 0 2rem 0;background-color:#eceeef}@media (min-width: 544px){.ngx-jumbotron[_nghost-7d0d-7]{padding:4rem 2rem 4rem 2rem}}</style><style>.ngx-grid[_nghost-7d0d-8]{display:block;margin-left:auto;margin-right:auto;padding-left:.9375rem;padding-right:.9375rem;box-sizing:border-box}@media (min-width: 544px){.ngx-grid:not(.ngx-grid-type-fluid)[_nghost-7d0d-8]{max-width:576px}}@media (min-width: 768px){.ngx-grid:not(.ngx-grid-type-fluid)[_nghost-7d0d-8]{max-width:720px}}@media (min-width: 992px){.ngx-grid:not(.ngx-grid-type-fluid)[_nghost-7d0d-8]{max-width:940px}}@media (min-width: 1200px){.ngx-grid:not(.ngx-grid-type-fluid)[_nghost-7d0d-8]{max-width:1140px}}.ngx-grid[_nghost-7d0d-8]     .ngx-grid-row{display:flex;flex-wrap:wrap;margin-left:-.9375rem;margin-right:-.9375rem;box-sizing:border-box}.ngx-grid[_nghost-7d0d-8]     .ngx-grid-col{position:relative;min-height:1px;padding-left:.9375rem;padding-right:.9375rem;box-sizing:border-box;overflow:hidden}.ngx-grid[_nghost-7d0d-8]     .ngx-grid-col.ngx-grid-col-xs-size-4{flex:0 0 33.33333%}.ngx-grid[_nghost-7d0d-8]     .ngx-grid-col.ngx-grid-col-xs-size-12{flex:0 0 100%}@media (min-width: 992px){.ngx-grid[_nghost-7d0d-8]     .ngx-grid-col.ngx-grid-col-lg-size-8{flex:0 0 66.66667%}}.ngx-grid[_nghost-7d0d-8]     .ngx-grid-col.ngx-grid-col-xs-offset-1{margin-left:0%}@media (min-width: 992px){.ngx-grid[_nghost-7d0d-8]     .ngx-grid-col.ngx-grid-col-lg-offset-3{margin-left:16.66667%}}</style><style>.xblog-footer[_nghost-7d0d-9]{display:block;padding:2.5rem 0 3.25rem;text-align:center}.xblog-footer[_nghost-7d0d-9] > .xblog-footer-social-link[_ngcontent-7d0d-9]{padding:0 0.25rem;color:#333}.xblog-footer[_nghost-7d0d-9] > .xblog-footer-social-link[_ngcontent-7d0d-9]:focus, .xblog-footer[_nghost-7d0d-9] > .xblog-footer-social-link[_ngcontent-7d0d-9]:hover{text-decoration:none;color:#5cb75c}.xblog-footer[_nghost-7d0d-9] > .xblog-footer-copyright[_ngcontent-7d0d-9]{font-size:.75rem;text-align:center;margin:0.5rem 0 0}</style><style>'.xblog-table-content'[_nghost-7d0d-12]{display:block}</style><style>.xblog-code-panel[_nghost-7d0d-13]{display:block;box-shadow:0 1px 4px 0 rgba(0,0,0,0.14)}.xblog-code-panel.xblog-code-panel-type-no-header[_nghost-7d0d-13]    >.ngx-card{padding-top:0}.xblog-code-panel.xblog-code-panel-type-no-header[_nghost-7d0d-13]    >.ngx-card>.ngx-card-header{display:none}.xblog-code-panel[_nghost-7d0d-13]    >.ngx-card{border-radius:0;border:none}.xblog-code-panel[_nghost-7d0d-13]    >.ngx-card xblog-title{font-weight:800;color:#333}.xblog-code-panel[_nghost-7d0d-13]    >.ngx-card a[xblog-source-code]{font-style:italic;font-weight:800;text-decoration:none;text-transform:lowercase}.xblog-code-panel[_nghost-7d0d-13]    >.ngx-card a[xblog-source-code]:focus, .xblog-code-panel[_nghost-7d0d-13]    >.ngx-card a[xblog-source-code]:hover{color:#5cb75c}.xblog-code-panel[_nghost-7d0d-13]    >.ngx-card ngx-card-content{margin:0.5rem -1.25rem -3.5rem -1.25rem;color:#fff;background-color:#3C4556}.xblog-code-panel[_nghost-7d0d-13]    >.ngx-card ngx-card-content code{display:block;overflow-x:auto;margin:-1.5rem 0}.xblog-code-panel[_nghost-7d0d-13]    >.ngx-card ngx-card-content code xblog-code{display:block;font-size:.875rem;padding:1rem 1.25rem}</style><style>.ngx-card[_nghost-7d0d-14]{display:block;position:relative;padding:1.25rem;border:1px solid;border-radius:.25rem}.ngx-card[_nghost-7d0d-14]     ngx-card-title{display:block;margin:0 0 0.75rem 0}.ngx-card[_nghost-7d0d-14]     ngx-card-subtitle{display:block;margin:calc(.75rem / -2) 0 0.75rem 0}.ngx-card[_nghost-7d0d-14]    >.ngx-card-header{display:flex}.ngx-card[_nghost-7d0d-14]    >.ngx-card-header>.ngx-card-header-content{min-width:1px;flex:1}.ngx-card[_nghost-7d0d-14]    >.ngx-card-header>ngx-card-actions{padding-left:10px}.ngx-card[_nghost-7d0d-14]    >ngx-card-content{display:block}.ngx-card[_nghost-7d0d-14]    >ngx-card-content>*:last-child{margin-bottom:0}.ngx-card.ngx-card-color-secondary[_nghost-7d0d-14]{color:#383b3d;background-color:#fff;border-color:#ccc}.ngx-card.ngx-card-color-secondary[_nghost-7d0d-14]     ngx-card-subtitle{color:rgba(56,59,61,0.65)}</style></head><body><xblog><router-outlet></router-outlet><xblog-article _nghost-7d0d-3="" class="xblog-article"><xblog-navbar _ngcontent-7d0d-3="" class="xblog-navbar"><ngx-navbar color="success" position="top" _nghost-7d0d-5="" ng-reflect-color="success" ng-reflect-position="top" class="ngx-navbar ngx-navbar-color-success ngx-navbar-position-top" classname="ngx-navbar ngx-navbar-color-success ngx-navbar-position-top"><div ngx-navbar-brand="" class="ngx-navbar-brand">$ngx</div></ngx-navbar></xblog-navbar><xblog-header _ngcontent-7d0d-3="" _nghost-7d0d-6="" ng-reflect-cover="/blog/resources/images/xblog-home-cover.jpg" class="xblog-header"><ngx-jumbotron _ngcontent-7d0d-6="" _nghost-7d0d-7="" class="ngx-jumbotron" classname="ngx-jumbotron" style="background-image:url(/blog/resources/images/xblog-home-cover.jpg)"><ngx-grid _ngcontent-7d0d-6="" type="fluid" _nghost-7d0d-8="" ng-reflect-type="fluid" class="ngx-grid ngx-grid-type-fluid" classname="ngx-grid ngx-grid-type-fluid"><ngx-grid-row _ngcontent-7d0d-6="" class="ngx-grid-row" classname="ngx-grid-row"><ngx-grid-col _ngcontent-7d0d-6="" offset="xs-1 lg-3" size="xs-12 lg-8" ng-reflect-size="xs-12 lg-8" ng-reflect-offset="xs-1 lg-3" class="ngx-grid-col ngx-grid-col-xs-size-12 ngx-grid-col-lg-size-8 ngx-grid-col-xs-offset-1 ngx-grid-col-lg-offset-3" classname="ngx-grid-col ngx-grid-col-xs-size-12 ngx-grid-col-lg-size-8 ngx-grid-col-xs-offset-1 ngx-grid-col-lg-offset-3"><h1 _ngcontent-7d0d-3="" xblog-title="">Reactive Forms</h1><hr _ngcontent-7d0d-3="" xblog-divider=""><xblog-subtitle _ngcontent-7d0d-3="">Sun Oct 30 2016 20:52:21 GMT+0700 (SE Asia Standard Time)</xblog-subtitle></ngx-grid-col></ngx-grid-row></ngx-grid></ngx-jumbotron></xblog-header><ngx-grid _ngcontent-7d0d-3="" class="ngx-grid ngx-grid-type-fluid xblog-article-content-section" type="fluid" _nghost-7d0d-8="" ng-reflect-type="fluid" ng-reflect-init-css-class="xblog-article-content-section" classname="ngx-grid ngx-grid-type-fluid xblog-article-content-section"><ngx-grid-row _ngcontent-7d0d-3="" class="ngx-grid-row" classname="ngx-grid-row"><ngx-grid-col _ngcontent-7d0d-3="" offset="xs-1 lg-3" size="xs-12 lg-8" ng-reflect-size="xs-12 lg-8" ng-reflect-offset="xs-1 lg-3" class="ngx-grid-col ngx-grid-col-xs-size-12 ngx-grid-col-lg-size-8 ngx-grid-col-xs-offset-1 ngx-grid-col-lg-offset-3" classname="ngx-grid-col ngx-grid-col-xs-size-12 ngx-grid-col-lg-size-8 ngx-grid-col-xs-offset-1 ngx-grid-col-lg-offset-3"><article class="xblog-article-1477835542"><p>As we've talked about <a ng-reflect-href="#" href="#">Template-driven forms</a> in previous article, it provide us the way to create sophisticated forms while writing as little JavaScript as possible.</p><p>Now, it's time we'll talk about reactive/model-driven forms which makes our forms testable without a DOM being required.</p><br><xblog-table-content _nghost-7d0d-12="" ng-reflect-model="[object Object],[object Object],[object Object],[object Object],[object Object]" class="xblog-table-content"><xblog-title><h5 class="section-subject">Table of Contents</h5></xblog-title><ol _ngcontent-7d0d-12=""><li _ngcontent-7d0d-12=""><a _ngcontent-7d0d-12="" ng-reflect-href="/#form-group-n-form-control" href="/#form-group-n-form-control">FormGroup and FormControl</a></li><li _ngcontent-7d0d-12=""><a _ngcontent-7d0d-12="" ng-reflect-href="/#form-group-n-form-group-name-n-form-control-name" href="/#form-group-n-form-group-name-n-form-control-name">formGroup &amp; formGroupName &amp; formControlName</a></li><li _ngcontent-7d0d-12=""><a _ngcontent-7d0d-12="" ng-reflect-href="/#form-builder" href="/#form-builder">FormBuilder</a></li><li _ngcontent-7d0d-12=""><a _ngcontent-7d0d-12="" ng-reflect-href="/#validators" href="/#validators">Validators</a></li><li _ngcontent-7d0d-12=""><a _ngcontent-7d0d-12="" ng-reflect-href="/#handle-changed-value-with-form-control" href="/#handle-changed-value-with-form-control">Handle changed value with formControl</a></li></ol></xblog-table-content><br><h2 class="section-heading" id="form-group-n-form-control">FormGroup and FormControl</h2><p>Let’s start with a simple login form.</p><br><xblog-code-panel type="no-header" _nghost-7d0d-13="" ng-reflect-type="no-header" class="xblog-code-panel xblog-code-panel-type-no-header" classname="xblog-code-panel xblog-code-panel-type-no-header"><ngx-card _ngcontent-7d0d-13="" _nghost-7d0d-14="" class="ngx-card ngx-card-color-secondary" classname="ngx-card ngx-card-color-secondary"><ngx-card-header _ngcontent-7d0d-13="" class="ngx-card-header" classname="ngx-card-header"><div class="ngx-card-header-content"><ngx-card-title _ngcontent-7d0d-13="" class="ngx-card-title"></ngx-card-title></div><ngx-card-actions _ngcontent-7d0d-13="" class="ngx-card-actions"></ngx-card-actions></ngx-card-header><ngx-card-content _ngcontent-7d0d-13="" class="ngx-card-content"><pre _ngcontent-7d0d-13="">       <code _ngcontent-7d0d-13="">         <xblog-code ng-reflect-inner-h-t-m-l="&amp;lt;form&amp;gt;
+  <span class=&quot;xml&quot;><span class=&quot;hljs-tag&quot;>&amp;lt;<span class=&quot;hljs-name&quot;>label</span>&amp;gt;</span>Firstname:<span class=&quot;hljs-tag&quot;>&amp;lt;/<span class=&quot;hljs-name&quot;>label</span>&amp;gt;</span></span>
+  &amp;lt;input type=<span class=&quot;hljs-string&quot;>&quot;text&quot;</span>&amp;gt;
+
+  <span class=&quot;xml&quot;><span class=&quot;hljs-tag&quot;>&amp;lt;<span class=&quot;hljs-name&quot;>label</span>&amp;gt;</span>Lastname:<span class=&quot;hljs-tag&quot;>&amp;lt;/<span class=&quot;hljs-name&quot;>label</span>&amp;gt;</span></span>
+  &amp;lt;input type=<span class=&quot;hljs-string&quot;>&quot;text&quot;</span>&amp;gt;
+
+  <span class=&quot;xml&quot;><span class=&quot;hljs-tag&quot;>&amp;lt;<span class=&quot;hljs-name&quot;>label</span>&amp;gt;</span>Email:<span class=&quot;hljs-tag&quot;>&amp;lt;/<span class=&quot;hljs-name&quot;>label</span>&amp;gt;</span></span>
+  &amp;lt;input type=<span class=&quot;hljs-string&quot;>&quot;text&quot;</span>&amp;gt;
+
+  <span class=&quot;xml&quot;><span class=&quot;hljs-tag&quot;>&amp;lt;<span class=&quot;hljs-name&quot;>label</span>&amp;gt;</span>Phone:<span class=&quot;hljs-tag&quot;>&amp;lt;/<span class=&quot;hljs-name&quot;>label</span>&amp;gt;</span></span>
+  &amp;lt;input type=<span class=&quot;hljs-string&quot;>&quot;text&quot;</span>&amp;gt;
+<span class=&quot;xml&quot;><span class=&quot;hljs-tag&quot;>&amp;lt;/<span class=&quot;hljs-name&quot;>form</span>&amp;gt;</span></span>">&lt;form&gt;
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">label</span>&gt;</span>Firstname:<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span></span>
+  &lt;input type=<span class="hljs-string">"text"</span>&gt;
+
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">label</span>&gt;</span>Lastname:<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span></span>
+  &lt;input type=<span class="hljs-string">"text"</span>&gt;
+
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">label</span>&gt;</span>Email:<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span></span>
+  &lt;input type=<span class="hljs-string">"text"</span>&gt;
+
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">label</span>&gt;</span>Phone:<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span></span>
+  &lt;input type=<span class="hljs-string">"text"</span>&gt;
+<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span></span></xblog-code>       </code>     </pre></ngx-card-content></ngx-card></xblog-code-panel><br><br><p>Next, we need to create a form model that represents that DOM structure in our component. One way to do that is to use the low level APIs for <span xblog-highlight="" class="xblog-highlight">FormGroup</span> and <span xblog-highlight="" class="xblog-highlight">FormControl</span>.</p><br><xblog-code-panel _nghost-7d0d-13="" class="xblog-code-panel" classname="xblog-code-panel"><ngx-card _ngcontent-7d0d-13="" _nghost-7d0d-14="" class="ngx-card ngx-card-color-secondary" classname="ngx-card ngx-card-color-secondary"><ngx-card-header _ngcontent-7d0d-13="" class="ngx-card-header" classname="ngx-card-header"><div class="ngx-card-header-content"><ngx-card-title _ngcontent-7d0d-13="" class="ngx-card-title"><xblog-title>reactive-forms</xblog-title></ngx-card-title></div><ngx-card-actions _ngcontent-7d0d-13="" class="ngx-card-actions"><a xblog-source-code="" ng-reflect-href="https://github.com/angular-esx/ngx-examples/blob/master/ngx-blog/articles/1477835542/examples/reactive-forms" href="https://github.com/angular-esx/ngx-examples/blob/master/ngx-blog/articles/1477835542/examples/reactive-forms">full code</a></ngx-card-actions></ngx-card-header><ngx-card-content _ngcontent-7d0d-13="" class="ngx-card-content"><pre _ngcontent-7d0d-13="">       <code _ngcontent-7d0d-13="">         <xblog-code ng-reflect-inner-h-t-m-l="<span class=&quot;hljs-keyword&quot;>import</span> * <span class=&quot;hljs-keyword&quot;>as</span> ngCore <span class=&quot;hljs-keyword&quot;>from</span> <span class=&quot;hljs-string&quot;>'@angular/core'</span>;
+<span class=&quot;hljs-keyword&quot;>import</span> {
+  FormGroup,
+  FormControl
+} <span class=&quot;hljs-keyword&quot;>from</span> <span class=&quot;hljs-string&quot;>'@angular/forms'</span>;
+
+<span class=&quot;hljs-keyword&quot;>export</span> <span class=&quot;hljs-keyword&quot;>var</span> exampleComponent = ngCore.Component({
+  .....
+})
+.Class({
+  .....
+  ngOnInit: <span class=&quot;hljs-function&quot;><span class=&quot;hljs-keyword&quot;>function</span>(<span class=&quot;hljs-params&quot;></span>)</span>{
+    <span class=&quot;hljs-keyword&quot;>this</span>.myForm = <span class=&quot;hljs-keyword&quot;>new</span> FormGroup({
+      name: <span class=&quot;hljs-keyword&quot;>new</span> FormGroup({
+        firstname: <span class=&quot;hljs-keyword&quot;>new</span> FormControl(),
+        lastname: <span class=&quot;hljs-keyword&quot;>new</span> FormControl()
+      }),
+      contact: <span class=&quot;hljs-keyword&quot;>new</span> FormGroup({
+        email: <span class=&quot;hljs-keyword&quot;>new</span> FormControl(),
+        phone: <span class=&quot;hljs-keyword&quot;>new</span> FormControl()
+      })
+    });
+  }
+});"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> ngCore <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/core'</span>;
+<span class="hljs-keyword">import</span> {
+  FormGroup,
+  FormControl
+} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/forms'</span>;
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">var</span> exampleComponent = ngCore.Component({
+  .....
+})
+.Class({
+  .....
+  ngOnInit: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">this</span>.myForm = <span class="hljs-keyword">new</span> FormGroup({
+      name: <span class="hljs-keyword">new</span> FormGroup({
+        firstname: <span class="hljs-keyword">new</span> FormControl(),
+        lastname: <span class="hljs-keyword">new</span> FormControl()
+      }),
+      contact: <span class="hljs-keyword">new</span> FormGroup({
+        email: <span class="hljs-keyword">new</span> FormControl(),
+        phone: <span class="hljs-keyword">new</span> FormControl()
+      })
+    });
+  }
+});</xblog-code>       </code>     </pre></ngx-card-content></ngx-card></xblog-code-panel><br><br><p>We created a component property <span xblog-highlight="" class="xblog-highlight">myForm</span> which represents the <span xblog-highlight="" class="xblog-highlight">FormGroup</span>, which is our form. For each field in the form, we’ve created a <span xblog-highlight="" class="xblog-highlight">FormControl</span>.</p><p>We also created two nested FormGroup <span xblog-highlight="" class="xblog-highlight">name</span> and <span xblog-highlight="" class="xblog-highlight">contact</span> which each of them is a collection of form controls.</p><br><p>We’ve just finished our first form model, let’s associate it to our template.</p><br><h2 class="section-heading" id="form-group-n-form-group-name-n-form-control-name">formGroup &amp; formGroupName &amp; formControlName</h2><p>By using <span xblog-highlight="" class="xblog-highlight">formGroup</span> directive we can connect the model with the form template</p><br><xblog-code-panel type="no-header" _nghost-7d0d-13="" ng-reflect-type="no-header" class="xblog-code-panel xblog-code-panel-type-no-header" classname="xblog-code-panel xblog-code-panel-type-no-header"><ngx-card _ngcontent-7d0d-13="" _nghost-7d0d-14="" class="ngx-card ngx-card-color-secondary" classname="ngx-card ngx-card-color-secondary"><ngx-card-header _ngcontent-7d0d-13="" class="ngx-card-header" classname="ngx-card-header"><div class="ngx-card-header-content"><ngx-card-title _ngcontent-7d0d-13="" class="ngx-card-title"></ngx-card-title></div><ngx-card-actions _ngcontent-7d0d-13="" class="ngx-card-actions"></ngx-card-actions></ngx-card-header><ngx-card-content _ngcontent-7d0d-13="" class="ngx-card-content"><pre _ngcontent-7d0d-13="">       <code _ngcontent-7d0d-13="">         <xblog-code ng-reflect-inner-h-t-m-l="<span class=&quot;hljs-tag&quot;>&amp;lt;<span class=&quot;hljs-name&quot;>form</span> [<span class=&quot;hljs-attr&quot;>formGroup</span>]=<span class=&quot;hljs-string&quot;>&quot;myForm&quot;</span>&amp;gt;</span>
+  .....
+<span class=&quot;hljs-tag&quot;>&amp;lt;/<span class=&quot;hljs-name&quot;>form</span>&amp;gt;</span>"><span class="hljs-tag">&lt;<span class="hljs-name">form</span> [<span class="hljs-attr">formGroup</span>]=<span class="hljs-string">"myForm"</span>&gt;</span>
+  .....
+<span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span></xblog-code>       </code>     </pre></ngx-card-content></ngx-card></xblog-code-panel><br><br><p>By using <span xblog-highlight="" class="xblog-highlight">formControlName</span> directive we can associate the form controls to the model as well.</p><br><xblog-code-panel type="no-header" _nghost-7d0d-13="" ng-reflect-type="no-header" class="xblog-code-panel xblog-code-panel-type-no-header" classname="xblog-code-panel xblog-code-panel-type-no-header"><ngx-card _ngcontent-7d0d-13="" _nghost-7d0d-14="" class="ngx-card ngx-card-color-secondary" classname="ngx-card ngx-card-color-secondary"><ngx-card-header _ngcontent-7d0d-13="" class="ngx-card-header" classname="ngx-card-header"><div class="ngx-card-header-content"><ngx-card-title _ngcontent-7d0d-13="" class="ngx-card-title"></ngx-card-title></div><ngx-card-actions _ngcontent-7d0d-13="" class="ngx-card-actions"></ngx-card-actions></ngx-card-header><ngx-card-content _ngcontent-7d0d-13="" class="ngx-card-content"><pre _ngcontent-7d0d-13="">       <code _ngcontent-7d0d-13="">         <xblog-code ng-reflect-inner-h-t-m-l="&amp;lt;form [formGroup]=<span class=&quot;hljs-string&quot;>&quot;myForm&quot;</span>&amp;gt;
+  <span class=&quot;xml&quot;><span class=&quot;hljs-tag&quot;>&amp;lt;<span class=&quot;hljs-name&quot;>label</span>&amp;gt;</span>Firstname:<span class=&quot;hljs-tag&quot;>&amp;lt;/<span class=&quot;hljs-name&quot;>label</span>&amp;gt;</span></span>
+  &amp;lt;input type=<span class=&quot;hljs-string&quot;>&quot;text&quot;</span> formControlName=<span class=&quot;hljs-string&quot;>&quot;firstname&quot;</span>&amp;gt;
+
+  <span class=&quot;xml&quot;><span class=&quot;hljs-tag&quot;>&amp;lt;<span class=&quot;hljs-name&quot;>label</span>&amp;gt;</span>Lastname:<span class=&quot;hljs-tag&quot;>&amp;lt;/<span class=&quot;hljs-name&quot;>label</span>&amp;gt;</span></span>
+  &amp;lt;input type=<span class=&quot;hljs-string&quot;>&quot;text&quot;</span> formControlName=<span class=&quot;hljs-string&quot;>&quot;lastname&quot;</span>&amp;gt;
+
+  <span class=&quot;xml&quot;><span class=&quot;hljs-tag&quot;>&amp;lt;<span class=&quot;hljs-name&quot;>label</span>&amp;gt;</span>Email:<span class=&quot;hljs-tag&quot;>&amp;lt;/<span class=&quot;hljs-name&quot;>label</span>&amp;gt;</span></span>
+  &amp;lt;input type=<span class=&quot;hljs-string&quot;>&quot;text&quot;</span> formControlName=<span class=&quot;hljs-string&quot;>&quot;emal&quot;</span>&amp;gt;
+
+  <span class=&quot;xml&quot;><span class=&quot;hljs-tag&quot;>&amp;lt;<span class=&quot;hljs-name&quot;>label</span>&amp;gt;</span>Phone:<span class=&quot;hljs-tag&quot;>&amp;lt;/<span class=&quot;hljs-name&quot;>label</span>&amp;gt;</span></span>
+  &amp;lt;input type=<span class=&quot;hljs-string&quot;>&quot;text&quot;</span> formControlName=<span class=&quot;hljs-string&quot;>&quot;phone&quot;</span>&amp;gt;
+<span class=&quot;xml&quot;><span class=&quot;hljs-tag&quot;>&amp;lt;/<span class=&quot;hljs-name&quot;>form</span>&amp;gt;</span></span>">&lt;form [formGroup]=<span class="hljs-string">"myForm"</span>&gt;
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">label</span>&gt;</span>Firstname:<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span></span>
+  &lt;input type=<span class="hljs-string">"text"</span> formControlName=<span class="hljs-string">"firstname"</span>&gt;
+
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">label</span>&gt;</span>Lastname:<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span></span>
+  &lt;input type=<span class="hljs-string">"text"</span> formControlName=<span class="hljs-string">"lastname"</span>&gt;
+
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">label</span>&gt;</span>Email:<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span></span>
+  &lt;input type=<span class="hljs-string">"text"</span> formControlName=<span class="hljs-string">"emal"</span>&gt;
+
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">label</span>&gt;</span>Phone:<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span></span>
+  &lt;input type=<span class="hljs-string">"text"</span> formControlName=<span class="hljs-string">"phone"</span>&gt;
+<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span></span></xblog-code>       </code>     </pre></ngx-card-content></ngx-card></xblog-code-panel><br><br><p>And last, by using <span xblog-highlight="" class="xblog-highlight">formGroupName</span> directive we can associate a group of form controls to that model.</p><br><xblog-code-panel type="no-header" _nghost-7d0d-13="" ng-reflect-type="no-header" class="xblog-code-panel xblog-code-panel-type-no-header" classname="xblog-code-panel xblog-code-panel-type-no-header"><ngx-card _ngcontent-7d0d-13="" _nghost-7d0d-14="" class="ngx-card ngx-card-color-secondary" classname="ngx-card ngx-card-color-secondary"><ngx-card-header _ngcontent-7d0d-13="" class="ngx-card-header" classname="ngx-card-header"><div class="ngx-card-header-content"><ngx-card-title _ngcontent-7d0d-13="" class="ngx-card-title"></ngx-card-title></div><ngx-card-actions _ngcontent-7d0d-13="" class="ngx-card-actions"></ngx-card-actions></ngx-card-header><ngx-card-content _ngcontent-7d0d-13="" class="ngx-card-content"><pre _ngcontent-7d0d-13="">       <code _ngcontent-7d0d-13="">         <xblog-code ng-reflect-inner-h-t-m-l="<span class=&quot;hljs-tag&quot;>&amp;lt;<span class=&quot;hljs-name&quot;>form</span> [<span class=&quot;hljs-attr&quot;>formGroup</span>]=<span class=&quot;hljs-string&quot;>&quot;myForm&quot;</span>&amp;gt;</span>
+  <span class=&quot;hljs-tag&quot;>&amp;lt;<span class=&quot;hljs-name&quot;>div</span> <span class=&quot;hljs-attr&quot;>formGroupName</span>=<span class=&quot;hljs-string&quot;>&quot;name&quot;</span>&amp;gt;</span>
+    <span class=&quot;hljs-tag&quot;>&amp;lt;<span class=&quot;hljs-name&quot;>label</span>&amp;gt;</span>Firstname:<span class=&quot;hljs-tag&quot;>&amp;lt;/<span class=&quot;hljs-name&quot;>label</span>&amp;gt;</span>
+    <span class=&quot;hljs-tag&quot;>&amp;lt;<span class=&quot;hljs-name&quot;>input</span> <span class=&quot;hljs-attr&quot;>type</span>=<span class=&quot;hljs-string&quot;>&quot;text&quot;</span> <span class=&quot;hljs-attr&quot;>formControlName</span>=<span class=&quot;hljs-string&quot;>&quot;firstname&quot;</span>&amp;gt;</span>
+
+    <span class=&quot;hljs-tag&quot;>&amp;lt;<span class=&quot;hljs-name&quot;>label</span>&amp;gt;</span>Lastname:<span class=&quot;hljs-tag&quot;>&amp;lt;/<span class=&quot;hljs-name&quot;>label</span>&amp;gt;</span>
+    <span class=&quot;hljs-tag&quot;>&amp;lt;<span class=&quot;hljs-name&quot;>input</span> <span class=&quot;hljs-attr&quot;>type</span>=<span class=&quot;hljs-string&quot;>&quot;text&quot;</span> <span class=&quot;hljs-attr&quot;>formControlName</span>=<span class=&quot;hljs-string&quot;>&quot;lastname&quot;</span>&amp;gt;</span>
+  <span class=&quot;hljs-tag&quot;>&amp;lt;/<span class=&quot;hljs-name&quot;>div</span>&amp;gt;</span>
+
+  <span class=&quot;hljs-tag&quot;>&amp;lt;<span class=&quot;hljs-name&quot;>div</span> <span class=&quot;hljs-attr&quot;>formGroupName</span>=<span class=&quot;hljs-string&quot;>&quot;contact&quot;</span>&amp;gt;</span>
+    <span class=&quot;hljs-tag&quot;>&amp;lt;<span class=&quot;hljs-name&quot;>label</span>&amp;gt;</span>Email:<span class=&quot;hljs-tag&quot;>&amp;lt;/<span class=&quot;hljs-name&quot;>label</span>&amp;gt;</span>
+    <span class=&quot;hljs-tag&quot;>&amp;lt;<span class=&quot;hljs-name&quot;>input</span> <span class=&quot;hljs-attr&quot;>type</span>=<span class=&quot;hljs-string&quot;>&quot;text&quot;</span> <span class=&quot;hljs-attr&quot;>formControlName</span>=<span class=&quot;hljs-string&quot;>&quot;emal&quot;</span>&amp;gt;</span>
+
+    <span class=&quot;hljs-tag&quot;>&amp;lt;<span class=&quot;hljs-name&quot;>label</span>&amp;gt;</span>Phone:<span class=&quot;hljs-tag&quot;>&amp;lt;/<span class=&quot;hljs-name&quot;>label</span>&amp;gt;</span>
+    <span class=&quot;hljs-tag&quot;>&amp;lt;<span class=&quot;hljs-name&quot;>input</span> <span class=&quot;hljs-attr&quot;>type</span>=<span class=&quot;hljs-string&quot;>&quot;text&quot;</span> <span class=&quot;hljs-attr&quot;>formControlName</span>=<span class=&quot;hljs-string&quot;>&quot;phone&quot;</span>&amp;gt;</span>
+  <span class=&quot;hljs-tag&quot;>&amp;lt;/<span class=&quot;hljs-name&quot;>div</span>&amp;gt;</span>
+<span class=&quot;hljs-tag&quot;>&amp;lt;/<span class=&quot;hljs-name&quot;>form</span>&amp;gt;</span>"><span class="hljs-tag">&lt;<span class="hljs-name">form</span> [<span class="hljs-attr">formGroup</span>]=<span class="hljs-string">"myForm"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">formGroupName</span>=<span class="hljs-string">"name"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">label</span>&gt;</span>Firstname:<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">formControlName</span>=<span class="hljs-string">"firstname"</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">label</span>&gt;</span>Lastname:<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">formControlName</span>=<span class="hljs-string">"lastname"</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">formGroupName</span>=<span class="hljs-string">"contact"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">label</span>&gt;</span>Email:<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">formControlName</span>=<span class="hljs-string">"emal"</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">label</span>&gt;</span>Phone:<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">formControlName</span>=<span class="hljs-string">"phone"</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span></xblog-code>       </code>     </pre></ngx-card-content></ngx-card></xblog-code-panel><br><br><p>Done, we've bound our form model to template completely.</p><p>Before show you how to add validators for our form controls, we should make code more readable by replacing <span xblog-highlight="" class="xblog-highlight">FormGroup</span> and <span xblog-highlight="" class="xblog-highlight">FormControl</span> with <span xblog-highlight="" class="xblog-highlight">FormBuilder</span>.</p><br><h2 class="section-heading" id="form-builder">FormBuilder</h2><p><span xblog-highlight="" class="xblog-highlight">FormBuilder</span> is like a factory that creates FormGroup and FormControl for us.</p><br><xblog-code-panel _nghost-7d0d-13="" class="xblog-code-panel" classname="xblog-code-panel"><ngx-card _ngcontent-7d0d-13="" _nghost-7d0d-14="" class="ngx-card ngx-card-color-secondary" classname="ngx-card ngx-card-color-secondary"><ngx-card-header _ngcontent-7d0d-13="" class="ngx-card-header" classname="ngx-card-header"><div class="ngx-card-header-content"><ngx-card-title _ngcontent-7d0d-13="" class="ngx-card-title"><xblog-title>reactive-forms</xblog-title></ngx-card-title></div><ngx-card-actions _ngcontent-7d0d-13="" class="ngx-card-actions"><a xblog-source-code="" ng-reflect-href="https://github.com/angular-esx/ngx-examples/blob/master/ngx-blog/articles/1477835542/examples/reactive-forms" href="https://github.com/angular-esx/ngx-examples/blob/master/ngx-blog/articles/1477835542/examples/reactive-forms">full code</a></ngx-card-actions></ngx-card-header><ngx-card-content _ngcontent-7d0d-13="" class="ngx-card-content"><pre _ngcontent-7d0d-13="">       <code _ngcontent-7d0d-13="">         <xblog-code ng-reflect-inner-h-t-m-l="<span class=&quot;hljs-keyword&quot;>import</span> * <span class=&quot;hljs-keyword&quot;>as</span> ngCore <span class=&quot;hljs-keyword&quot;>from</span> <span class=&quot;hljs-string&quot;>'@angular/core'</span>;
+<span class=&quot;hljs-keyword&quot;>import</span> {
+  FormBuilder
+} <span class=&quot;hljs-keyword&quot;>from</span> <span class=&quot;hljs-string&quot;>'@angular/forms'</span>;
+
+<span class=&quot;hljs-keyword&quot;>export</span> <span class=&quot;hljs-keyword&quot;>var</span> exampleComponent = ngCore.Component({
+  .....
+})
+.Class({
+  <span class=&quot;hljs-keyword&quot;>constructor</span>: [
+    FormBuilder,
+
+    function(formBuilder){
+      <span class=&quot;hljs-keyword&quot;>this</span>.formBuilder = formBuilder;
+    }
+  ],
+
+  ngOnInit: <span class=&quot;hljs-function&quot;><span class=&quot;hljs-keyword&quot;>function</span>(<span class=&quot;hljs-params&quot;></span>)</span>{
+    <span class=&quot;hljs-keyword&quot;>this</span>.myForm = <span class=&quot;hljs-keyword&quot;>this</span>.formBuilder.group({
+      name: <span class=&quot;hljs-keyword&quot;>this</span>.formBuilder.group({
+        firstname: <span class=&quot;hljs-string&quot;>'Leon'</span>,
+        lastname: <span class=&quot;hljs-string&quot;>'Kennedy'</span>,
+      }),
+      contact: <span class=&quot;hljs-keyword&quot;>this</span>.formBuilder.group({
+        email: <span class=&quot;hljs-string&quot;>'leon.kennedy@mail.com'</span>,
+        phone: <span class=&quot;hljs-string&quot;>''</span>
+      })
+    });
+  }
+});"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> ngCore <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/core'</span>;
+<span class="hljs-keyword">import</span> {
+  FormBuilder
+} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/forms'</span>;
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">var</span> exampleComponent = ngCore.Component({
+  .....
+})
+.Class({
+  <span class="hljs-keyword">constructor</span>: [
+    FormBuilder,
+
+    function(formBuilder){
+      <span class="hljs-keyword">this</span>.formBuilder = formBuilder;
+    }
+  ],
+
+  ngOnInit: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">this</span>.myForm = <span class="hljs-keyword">this</span>.formBuilder.group({
+      name: <span class="hljs-keyword">this</span>.formBuilder.group({
+        firstname: <span class="hljs-string">'Leon'</span>,
+        lastname: <span class="hljs-string">'Kennedy'</span>,
+      }),
+      contact: <span class="hljs-keyword">this</span>.formBuilder.group({
+        email: <span class="hljs-string">'leon.kennedy@mail.com'</span>,
+        phone: <span class="hljs-string">''</span>
+      })
+    });
+  }
+});</xblog-code>       </code>     </pre></ngx-card-content></ngx-card></xblog-code-panel><br><br><p>This looks way better and we haven’t done any changes on the template.</p><p></p><h2 class="section-heading" id="validators">Validators</h2><p>It's time we should add validators to our form controls.</p><p>There are different ways to add them, we can either add them as directives to the template or to the <span xblog-highlight="" class="xblog-highlight">FormControl</span> instance in our model.</p><br><xblog-code-panel _nghost-7d0d-13="" class="xblog-code-panel" classname="xblog-code-panel"><ngx-card _ngcontent-7d0d-13="" _nghost-7d0d-14="" class="ngx-card ngx-card-color-secondary" classname="ngx-card ngx-card-color-secondary"><ngx-card-header _ngcontent-7d0d-13="" class="ngx-card-header" classname="ngx-card-header"><div class="ngx-card-header-content"><ngx-card-title _ngcontent-7d0d-13="" class="ngx-card-title"><xblog-title>reactive-forms</xblog-title></ngx-card-title></div><ngx-card-actions _ngcontent-7d0d-13="" class="ngx-card-actions"><a xblog-source-code="" ng-reflect-href="https://github.com/angular-esx/ngx-examples/blob/master/ngx-blog/articles/1477835542/examples/reactive-forms" href="https://github.com/angular-esx/ngx-examples/blob/master/ngx-blog/articles/1477835542/examples/reactive-forms">full code</a></ngx-card-actions></ngx-card-header><ngx-card-content _ngcontent-7d0d-13="" class="ngx-card-content"><pre _ngcontent-7d0d-13="">       <code _ngcontent-7d0d-13="">         <xblog-code ng-reflect-inner-h-t-m-l="<span class=&quot;hljs-keyword&quot;>import</span> * <span class=&quot;hljs-keyword&quot;>as</span> ngCore <span class=&quot;hljs-keyword&quot;>from</span> <span class=&quot;hljs-string&quot;>'@angular/core'</span>;
+<span class=&quot;hljs-keyword&quot;>import</span> {
+  FormBuilder,
+  Validators
+} <span class=&quot;hljs-keyword&quot;>from</span> <span class=&quot;hljs-string&quot;>'@angular/forms'</span>;
+
+<span class=&quot;hljs-keyword&quot;>export</span> <span class=&quot;hljs-keyword&quot;>var</span> exampleComponent = ngCore.Component({
+  .....
+})
+.Class({
+  <span class=&quot;hljs-keyword&quot;>constructor</span>: [
+    FormBuilder,
+
+    function(formBuilder){
+      <span class=&quot;hljs-keyword&quot;>this</span>.formBuilder = formBuilder;
+    }
+  ],
+
+  ngOnInit: <span class=&quot;hljs-function&quot;><span class=&quot;hljs-keyword&quot;>function</span>(<span class=&quot;hljs-params&quot;></span>)</span>{
+    <span class=&quot;hljs-keyword&quot;>this</span>.myForm = <span class=&quot;hljs-keyword&quot;>this</span>.formBuilder.group({
+      name: <span class=&quot;hljs-keyword&quot;>this</span>.formBuilder.group({
+        firstname: [<span class=&quot;hljs-string&quot;>'Leon'</span>, Validators.required],
+        lastname: [<span class=&quot;hljs-string&quot;>'Kennedy'</span>, Validators.required],
+      }),
+      contact: <span class=&quot;hljs-keyword&quot;>this</span>.formBuilder.group({
+        email: [<span class=&quot;hljs-string&quot;>'leon.kennedy@mail.com'</span>, Validators.required],
+        phone: <span class=&quot;hljs-string&quot;>''</span>
+      })
+    });
+  }
+});"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> ngCore <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/core'</span>;
+<span class="hljs-keyword">import</span> {
+  FormBuilder,
+  Validators
+} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/forms'</span>;
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">var</span> exampleComponent = ngCore.Component({
+  .....
+})
+.Class({
+  <span class="hljs-keyword">constructor</span>: [
+    FormBuilder,
+
+    function(formBuilder){
+      <span class="hljs-keyword">this</span>.formBuilder = formBuilder;
+    }
+  ],
+
+  ngOnInit: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">this</span>.myForm = <span class="hljs-keyword">this</span>.formBuilder.group({
+      name: <span class="hljs-keyword">this</span>.formBuilder.group({
+        firstname: [<span class="hljs-string">'Leon'</span>, Validators.required],
+        lastname: [<span class="hljs-string">'Kennedy'</span>, Validators.required],
+      }),
+      contact: <span class="hljs-keyword">this</span>.formBuilder.group({
+        email: [<span class="hljs-string">'leon.kennedy@mail.com'</span>, Validators.required],
+        phone: <span class="hljs-string">''</span>
+      })
+    });
+  }
+});</xblog-code>       </code>     </pre></ngx-card-content></ngx-card></xblog-code-panel><br><br><p>A <span xblog-highlight="" class="xblog-highlight">FormControl</span> takes a value as first, a synchronous validator as second and an asynchronous validator as third parameter.</p><p>We can also pass a collection of validators which causes Angular to compose them for us.</p><br><p>Now, we can access the validity state of a form control like this</p><br><xblog-code-panel type="no-header" _nghost-7d0d-13="" ng-reflect-type="no-header" class="xblog-code-panel xblog-code-panel-type-no-header" classname="xblog-code-panel xblog-code-panel-type-no-header"><ngx-card _ngcontent-7d0d-13="" _nghost-7d0d-14="" class="ngx-card ngx-card-color-secondary" classname="ngx-card ngx-card-color-secondary"><ngx-card-header _ngcontent-7d0d-13="" class="ngx-card-header" classname="ngx-card-header"><div class="ngx-card-header-content"><ngx-card-title _ngcontent-7d0d-13="" class="ngx-card-title"></ngx-card-title></div><ngx-card-actions _ngcontent-7d0d-13="" class="ngx-card-actions"></ngx-card-actions></ngx-card-header><ngx-card-content _ngcontent-7d0d-13="" class="ngx-card-content"><pre _ngcontent-7d0d-13="">       <code _ngcontent-7d0d-13="">         <xblog-code ng-reflect-inner-h-t-m-l="&amp;lt;form [formGroup]=<span class=&quot;hljs-string&quot;>&quot;myForm&quot;</span>&amp;gt;
+  <span class=&quot;xml&quot;><span class=&quot;hljs-tag&quot;>&amp;lt;<span class=&quot;hljs-name&quot;>div</span> <span class=&quot;hljs-attr&quot;>formGroupName</span>=<span class=&quot;hljs-string&quot;>&quot;name&quot;</span>&amp;gt;</span>
+    <span class=&quot;hljs-tag&quot;>&amp;lt;<span class=&quot;hljs-name&quot;>div</span>&amp;gt;</span>
+      <span class=&quot;hljs-tag&quot;>&amp;lt;<span class=&quot;hljs-name&quot;>label</span>&amp;gt;</span>Firstname:<span class=&quot;hljs-tag&quot;>&amp;lt;/<span class=&quot;hljs-name&quot;>label</span>&amp;gt;</span>
+      <span class=&quot;hljs-tag&quot;>&amp;lt;<span class=&quot;hljs-name&quot;>input</span> <span class=&quot;hljs-attr&quot;>type</span>=<span class=&quot;hljs-string&quot;>&quot;text&quot;</span> <span class=&quot;hljs-attr&quot;>formControlName</span>=<span class=&quot;hljs-string&quot;>&quot;firstname&quot;</span>&amp;gt;</span>
+    <span class=&quot;hljs-tag&quot;>&amp;lt;/<span class=&quot;hljs-name&quot;>div</span>&amp;gt;</span>
+    <span class=&quot;hljs-tag&quot;>&amp;lt;<span class=&quot;hljs-name&quot;>div</span> <span class=&quot;hljs-attr&quot;>class</span>=<span class=&quot;hljs-string&quot;>&quot;error-message&quot;</span> *<span class=&quot;hljs-attr&quot;>ngIf</span>=<span class=&quot;hljs-string&quot;>&quot;myForm.controls.name.controls.firstname.errors&quot;</span>&amp;gt;</span>
+      Firstname is required
+    <span class=&quot;hljs-tag&quot;>&amp;lt;/<span class=&quot;hljs-name&quot;>div</span>&amp;gt;</span>
+    .....
+  <span class=&quot;hljs-tag&quot;>&amp;lt;/<span class=&quot;hljs-name&quot;>div</span>&amp;gt;</span>
+  .....
+<span class=&quot;hljs-tag&quot;>&amp;lt;/<span class=&quot;hljs-name&quot;>form</span>&amp;gt;</span></span>">&lt;form [formGroup]=<span class="hljs-string">"myForm"</span>&gt;
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">formGroupName</span>=<span class="hljs-string">"name"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">label</span>&gt;</span>Firstname:<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">formControlName</span>=<span class="hljs-string">"firstname"</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"error-message"</span> *<span class="hljs-attr">ngIf</span>=<span class="hljs-string">"myForm.controls.name.controls.firstname.errors"</span>&gt;</span>
+      Firstname is required
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    .....
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  .....
+<span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span></span></xblog-code>       </code>     </pre></ngx-card-content></ngx-card></xblog-code-panel><br><br><p>In Angular 2, you can also create custom validators, you can read the article <a ng-reflect-href="#" href="#">Custom Form Validators</a> to get knowledges about that.</p><br><h2 class="section-heading" id="handle-changed-value-with-form-control">Handle changed value with formControl</h2><p>In the last subject of this article, we want to show you a cool thing about <span xblog-highlight="" class="xblog-highlight">formControl</span></p><p>First, we'll add a input to our form, name it <span xblog-highlight="" class="xblog-highlight">address</span>. Assume that this input is an <span xblog-highlight="" class="xblog-highlight">autocomplete</span>, it'll suggest addresses for users while they're typing.</p><br><xblog-code-panel type="no-header" _nghost-7d0d-13="" ng-reflect-type="no-header" class="xblog-code-panel xblog-code-panel-type-no-header" classname="xblog-code-panel xblog-code-panel-type-no-header"><ngx-card _ngcontent-7d0d-13="" _nghost-7d0d-14="" class="ngx-card ngx-card-color-secondary" classname="ngx-card ngx-card-color-secondary"><ngx-card-header _ngcontent-7d0d-13="" class="ngx-card-header" classname="ngx-card-header"><div class="ngx-card-header-content"><ngx-card-title _ngcontent-7d0d-13="" class="ngx-card-title"></ngx-card-title></div><ngx-card-actions _ngcontent-7d0d-13="" class="ngx-card-actions"></ngx-card-actions></ngx-card-header><ngx-card-content _ngcontent-7d0d-13="" class="ngx-card-content"><pre _ngcontent-7d0d-13="">       <code _ngcontent-7d0d-13="">         <xblog-code ng-reflect-inner-h-t-m-l="<span class=&quot;hljs-tag&quot;>&amp;lt;<span class=&quot;hljs-name&quot;>form</span> [<span class=&quot;hljs-attr&quot;>formGroup</span>]=<span class=&quot;hljs-string&quot;>&quot;myForm&quot;</span>&amp;gt;</span>
+  .....
+  <span class=&quot;hljs-tag&quot;>&amp;lt;<span class=&quot;hljs-name&quot;>label</span>&amp;gt;</span>Address:<span class=&quot;hljs-tag&quot;>&amp;lt;/<span class=&quot;hljs-name&quot;>label</span>&amp;gt;</span>
+  <span class=&quot;hljs-tag&quot;>&amp;lt;<span class=&quot;hljs-name&quot;>input</span> <span class=&quot;hljs-attr&quot;>type</span>=<span class=&quot;hljs-string&quot;>&quot;search&quot;</span> [<span class=&quot;hljs-attr&quot;>formControl</span>]=<span class=&quot;hljs-string&quot;>&quot;addressControl&quot;</span>&amp;gt;</span>
+<span class=&quot;hljs-tag&quot;>&amp;lt;/<span class=&quot;hljs-name&quot;>form</span>&amp;gt;</span>"><span class="hljs-tag">&lt;<span class="hljs-name">form</span> [<span class="hljs-attr">formGroup</span>]=<span class="hljs-string">"myForm"</span>&gt;</span>
+  .....
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span>&gt;</span>Address:<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"search"</span> [<span class="hljs-attr">formControl</span>]=<span class="hljs-string">"addressControl"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span></xblog-code>       </code>     </pre></ngx-card-content></ngx-card></xblog-code-panel><br><br><p>Actually, Angular comes with a directive <span xblog-highlight="" class="xblog-highlight">formControl</span> which doesn’t have to be inside a <span xblog-highlight="" class="xblog-highlight">formGroup</span></p><p>So we can listen reactively for changes that are happening to that control by subscribing to <span xblog-highlight="" class="xblog-highlight">valuesChanges()</span> - An Observable property of formControl</p><br><xblog-code-panel _nghost-7d0d-13="" class="xblog-code-panel" classname="xblog-code-panel"><ngx-card _ngcontent-7d0d-13="" _nghost-7d0d-14="" class="ngx-card ngx-card-color-secondary" classname="ngx-card ngx-card-color-secondary"><ngx-card-header _ngcontent-7d0d-13="" class="ngx-card-header" classname="ngx-card-header"><div class="ngx-card-header-content"><ngx-card-title _ngcontent-7d0d-13="" class="ngx-card-title"><xblog-title>reactive-forms</xblog-title></ngx-card-title></div><ngx-card-actions _ngcontent-7d0d-13="" class="ngx-card-actions"><a xblog-source-code="" ng-reflect-href="https://github.com/angular-esx/ngx-examples/blob/master/ngx-blog/articles/1477835542/examples/reactive-forms" href="https://github.com/angular-esx/ngx-examples/blob/master/ngx-blog/articles/1477835542/examples/reactive-forms">full code</a></ngx-card-actions></ngx-card-header><ngx-card-content _ngcontent-7d0d-13="" class="ngx-card-content"><pre _ngcontent-7d0d-13="">       <code _ngcontent-7d0d-13="">         <xblog-code ng-reflect-inner-h-t-m-l="<span class=&quot;hljs-keyword&quot;>export</span> <span class=&quot;hljs-keyword&quot;>var</span> exampleComponent = ngCore.Component({
+  .....
+})
+.Class({
+  .....
+
+  ngOnInit: <span class=&quot;hljs-function&quot;><span class=&quot;hljs-keyword&quot;>function</span>(<span class=&quot;hljs-params&quot;></span>)</span>{
+    .....
+    
+    this.addressControl = <span class=&quot;hljs-keyword&quot;>new</span> FormControl();
+    <span class=&quot;hljs-keyword&quot;>this</span>.addressControl.valueChanges.subscribe(<span class=&quot;hljs-function&quot;><span class=&quot;hljs-keyword&quot;>function</span>(<span class=&quot;hljs-params&quot;>value</span>)</span>{
+      <span class=&quot;hljs-built_in&quot;>console</span>.log(value);
+    });
+  }
+});"><span class="hljs-keyword">export</span> <span class="hljs-keyword">var</span> exampleComponent = ngCore.Component({
+  .....
+})
+.Class({
+  .....
+
+  ngOnInit: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    .....
+    
+    this.addressControl = <span class="hljs-keyword">new</span> FormControl();
+    <span class="hljs-keyword">this</span>.addressControl.valueChanges.subscribe(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">value</span>)</span>{
+      <span class="hljs-built_in">console</span>.log(value);
+    });
+  }
+});</xblog-code>       </code>     </pre></ngx-card-content></ngx-card></xblog-code-panel><br><br></article></ngx-grid-col></ngx-grid-row></ngx-grid><xblog-footer _ngcontent-7d0d-3="" _nghost-7d0d-9="" class="xblog-footer"><a _ngcontent-7d0d-9="" class="xblog-footer-social-link" href="#"><span _ngcontent-7d0d-9="" class="fa-stack fa-lg"><i _ngcontent-7d0d-9="" class="fa fa-circle fa-stack-2x"></i> <i _ngcontent-7d0d-9="" class="fa fa-twitter fa-stack-1x fa-inverse"></i> </span></a><a _ngcontent-7d0d-9="" class="xblog-footer-social-link" href="#"><span _ngcontent-7d0d-9="" class="fa-stack fa-lg"><i _ngcontent-7d0d-9="" class="fa fa-circle fa-stack-2x"></i> <i _ngcontent-7d0d-9="" class="fa fa-facebook fa-stack-1x fa-inverse"></i> </span></a><a _ngcontent-7d0d-9="" class="xblog-footer-social-link" href="#"><span _ngcontent-7d0d-9="" class="fa-stack fa-lg"><i _ngcontent-7d0d-9="" class="fa fa-circle fa-stack-2x"></i> <i _ngcontent-7d0d-9="" class="fa fa-github fa-stack-1x fa-inverse"></i></span></a><p _ngcontent-7d0d-9="" class="xblog-footer-copyright">Copyright © Your Website 2016</p></xblog-footer></xblog-article></xblog><!--[if lt IE 11]>
+      <!-- ie11:js --><universal-script><script>try {window.UNIVERSAL_CACHE = ({"APP_ID":"7d0d"}) || {};} catch(e) {  console.warn("Angular Universal: There was a problem parsing data from the server")}</script></universal-script></body></html>
